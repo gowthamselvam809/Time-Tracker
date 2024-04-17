@@ -1,0 +1,170 @@
+.left_side {
+    border-radius: 10px 0 0 10px;
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // height: 100%;
+    // width: 100%;
+
+    // overflow: hidden;
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
+}
+
+.main_container {
+    background-image: url('../images/clock.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: 750px) {
+        background-image: none;
+    }
+}
+
+.error_text {
+    color: red;
+}
+
+.left_side img {
+    height: 100vh;
+    width: 100%;
+
+    // object-fit: cover;
+
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
+}
+
+.login_container {
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.login_form {
+
+    &_header {
+        margin-bottom: 25px;
+    }
+
+    &_group {
+        margin-bottom: 18px;
+
+        &_input {
+            height: 48px;
+            border: 0px;
+            background-color: #F3F6FF;
+
+        }
+    }
+
+    &_button {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+
+}
+
+.register_form {
+
+    &_header {
+        margin-bottom: 15px;
+    }
+
+    &_group {
+        margin-bottom: 15px;
+    }
+
+    &_button {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.clock_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 2;
+    box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+#time {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time .circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#time .circle svg {
+    position: relative;
+
+}
+
+#time .circle:nth-child(1) svg {
+    width: 250px;
+    height: 250px;
+}
+
+#time .circle:nth-child(2) svg {
+    width: 210px;
+    height: 210px;
+}
+
+#time .circle:nth-child(3) svg {
+    width: 170px;
+    height: 170px;
+}
+
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 5;
+    // stroke: var(--clr);
+    stroke: aqua;
+    transform: translate(5px, 5px);
+    opacity: 0.75;
+}
+
+#time .circle:nth-child(1) svg circle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+
+#time .circle:nth-child(2) svg circle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+
+#time .circle:nth-child(3) svg circle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}

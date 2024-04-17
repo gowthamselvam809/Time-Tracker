@@ -1,0 +1,161 @@
+.home_container {
+    background-color: #eeeaef;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-text {
+    color: blue;
+}
+
+.card_container {
+    border-radius: 20px !important;
+    border: none !important;
+    width: 600px;
+    height: 300px;
+    padding: 20px 50px;
+
+    @media only screen and (max-width: 520px) {
+        padding: 15px 10px;
+    }
+
+    &_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &_avatar_container {
+            display: flex;
+            flex-direction: row;
+            // padding: 10px;
+
+            &_image {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            &_text {
+                font-size: 16px;
+                font-weight: bold;
+                // font-family: 'Courier New', Courier, monospace;
+            }
+        }
+    }
+
+    &_body {
+        display: flex;
+        flex-direction: row;
+        // padding: 10px;
+
+        &_timer {
+            margin-left: 20px;
+            font-size: 43px;
+            color: #5960e4;
+            font-weight: bolder;
+
+            @media only screen and (max-width: 520px) {
+                font-size: 35px;
+                margin-left: 10px;
+            }
+        }
+
+        &_date {
+            margin-top: -10px;
+            margin-left: 20px;
+            font-weight: bold;
+
+            @media only screen and (max-width: 520px) {
+                margin-left: 13px;
+            }
+        }
+
+        &_button_in {
+            background-color: rgb(0, 126, 229);
+            font-size: 14px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        &_button_out {
+            background-color: rgb(229, 0, 4);
+            font-size: 14px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.clock_in_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 50px;
+
+    @media only screen and (max-width: 520px) {
+        margin-right: 10px;
+    }
+
+    &_box {
+        border: none;
+        background-color: rgb(0 126 230 / 10%);
+        border-radius: 10px;
+        width: 150px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: 520px) {
+            width: 130px;
+            height: 50px;
+        }
+
+        &_bottom {
+            font-size: 12px;
+            font-weight: bold;
+
+            @media only screen and (max-width: 520px) {
+                font-size: 12px;
+            }
+        }
+
+        &_time {
+            color: rgb(0, 126, 229);
+            font-size: 17px;
+
+            @media only screen and (max-width: 520px) {
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    &_clock_out {
+        border: none;
+        // background-color: rgb(0 126 230 / 10%);
+        border-radius: 10px;
+        width: 180px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
