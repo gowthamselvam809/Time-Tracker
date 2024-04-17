@@ -1,8 +1,8 @@
 // require('dotenv').config();
 
 const Url = {
-    baseApiUrl: "http://localhost:5000",
-    // baseApiUrl: process.env.BACKEND_URL,
+    // baseApiUrl: "http://localhost:5000",
+    baseApiUrl: "https://time-tracker-mnpv.onrender.com"
 }
 
 const apiRoutes = {
